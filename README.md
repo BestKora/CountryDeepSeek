@@ -22,8 +22,8 @@
 ## Results of using DeepSeek:
 * Decoding JSON data without any problems, but got stuck when mapping country and additional information about population and GDP, 
 which is explained by “logical errors” in the design of the World Bank API
-* Used a modern async / await system for working with multithreading
-Suggested using @MainActor for View Model for Swift 6 strict concurrency, and after comments added marking of fetch functions as nonisolated.
+* Used a modern async / await system for working with multithreading.
+Suggested using @MainActor for View Model for Swift 6 strict concurrency and marking fetch functions as nonisolated.
 * At first suggested the old Map API with Map (coordinateRegion: $region, annotationItems: [country]) and MapMaker,
   but after receiving the corresponding warnings, switched to the new API with Map (position: $position) and Maker quite successfully.
 * Used CLGeocoder() to get more accurate geographic coordinates of the country's capital and Task.detached to run in the background.
