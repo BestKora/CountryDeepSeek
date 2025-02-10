@@ -8,7 +8,7 @@
  We used World Bank data, but we did not tell the AI ​​either the sites or the data structures, 
  the AI ​​should find all this itself and use them when creating an iOS application.
  
- ![til](https://github.com/BestKora/CountryChatGPTo3/blob/285aa2b9c83668acf453f46f36f1e36f1fa3c590/ChatGPTO3.gif)
+ ![til](https://github.com/BestKora/CountryDeepSeek/blob/5578d9842ee9dfcbf339d0b60fa39b309ba377ba/DeepSeek.gif)
 
 ## Technologies used by DeepSeek:
 
