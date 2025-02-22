@@ -105,7 +105,7 @@ struct CountryDetailView: View {
             if let region = viewModel.region, let coordinate = viewModel.coordinate {
                 Map(position: .constant(.region(region))) {
                     // Map content here
-                 //   Marker(country.name, coordinate: region.center)
+              //    Marker(country.name, coordinate: region.center)
                     // Custom annotation version
                     Annotation(country.capitalCity, coordinate: coordinate) {
                         Text(country.flag)
@@ -117,7 +117,7 @@ struct CountryDetailView: View {
                     MapCompass()
                     MapScaleView()
                 }
-                .frame(height: 300)
+                .frame(height: 400)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             }
         }
@@ -145,7 +145,7 @@ class CountryDetailViewModel: ObservableObject {
     @Published var showGeocodingError = false
     
     // Add this computed property for MapKit
-        var mapCameraPosition: MapCameraPosition? {
+    var mapCameraPosition: MapCameraPosition? {
             guard let region else { return nil }
             return .region(region)
         }
